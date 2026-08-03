@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:url("bg.jpg") no-repeat center center fixed;
+    background-size:cover;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(8,25,52,0.55);
+    z-index:-1;
+}
+
+header{
+    width:100%;
+    background:linear-gradient(to right,#cf1910,#f75757);
+    color:white;
+    text-align:center;
+    padding:11px;
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+
+header h2{
+    font-size:25px;
+    letter-spacing:1px;
+}
+
+header p{
+    font-size:13px;
+    margin-top:5px;
+}
+
+.container{
+    width:75%;
+    max-width:850px;
+    margin:35px auto;
+    background:rgba(255,255,255,.95);
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+.container h1{
+    text-align:center;
+    color:#0f4c81;
+    margin-bottom:15px;
+}
+
+.student-details{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.input-box{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-box label{
+    font-weight:bold;
+    color:#0f4c81;
+    margin-bottom:8px;
+}
+
+.input-box input{
+    padding:12px;
+    border:2px solid #b0c4de;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.input-box input:focus{
+    outline:none;
+    border-color:#1e88e5;
+}
+
+.rules{
+    margin-top:25px;
+    background:#eef6ff;
+    border-left:6px solid #1e88e5;
+    padding:18px;
+    border-radius:8px;
+}
+
+.rules h3{
+    color:#0f4c81;
+    margin-bottom:10px;
+}
+
+.rules ul{
+    margin-left:20px;
+    line-height:30px;
+}
+
+button{
+    display:block;
+    margin:25px auto;
+    background:#ff9800;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    font-size:17px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#e65100;
+    transform:scale(1.05);
+}
+
+#marksSection{
+    display:none;
+    margin-top:35px;
+}
+
+#marksSection h2{
+    text-align:center;
+    color:#0f4c81;
+    margin-bottom:25px;
+}
+
+.subjects{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.subject{
+    background:#f7fbff;
+    border:2px solid #d9e8ff;
+    border-radius:12px;
+    padding:8px;
+}
+
+.subject label{
+    display:block;
+    font-weight:bold;
+    color:#0f4c81;
+    margin-bottom:10px;
+}
+
+.subject input{
+    width:100%;
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.subject input:focus{
+    outline:none;
+    border-color:#1e88e5;
+}
+
+#resultSection{
+    margin-top:40px;
+}
+
+#resultSection h2{
+    text-align:center;
+    color:#0f4c81;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th{
+    background:#0f4c81;
+    color:white;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:8px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f4f8ff;
+}
+
+#total,#percentage,#result{
+    margin-top:18px;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+}
+
+footer{
+    background:#0f4c81;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+    font-size:16px;
+}
+
+@media(max-width:768px){
+
+.student-details{
+grid-template-columns:1fr;
+}
+
+.subjects{
+grid-template-columns:1fr;
+}
+
+.container{
+width:65%;
+padding:20px;
+}
+
+}

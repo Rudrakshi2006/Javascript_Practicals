@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grading System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>SYMBIOSIS INSTITUTE OF TECHNOLOGY, NAGPUR</h2>
+    <p>Department of Computer Science & Engineering</p>
+</header>
+
+<div class="container">
+
+    <h1>Student Grading System</h1>
+
+    <div class="student-details">
+
+        <div class="input-box">
+            <label>Student Name</label>
+            <input type="text" id="name" placeholder="Enter Name">
+        </div>
+
+        <div class="input-box">
+            <label>PRN Number</label>
+            <input type="text" id="prn" placeholder="Enter PRN">
+        </div>
+
+        <div class="input-box">
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Create Password">
+        </div>
+
+    </div>
+
+    <div class="rules">
+        <h3>Password Requirements</h3>
+        <ul>
+            <li>Minimum 8 characters</li>
+            <li>At least one Uppercase letter</li>
+            <li>At least one Lowercase letter</li>
+            <li>At least one Number</li>
+            <li>At least one Special Symbol (@$!%*?&)</li>
+        </ul>
+    </div>
+
+    <button onclick="validatePassword()">Verify & Continue</button>
+
+    <div id="marksSection">
+
+        <h2>Enter Subject Marks</h2>
+
+        <div class="subjects">
+
+            <div class="subject">
+                <label>DBMS</label>
+                <input type="number" id="dbms" min="0" max="100">
+            </div>
+
+            <div class="subject">
+                <label>JavaScript</label>
+                <input type="number" id="js" min="0" max="100">
+            </div>
+
+            <div class="subject">
+                <label>CN</label>
+                <input type="number" id="cn" min="0" max="100">
+            </div>
+
+            <div class="subject">
+                <label>CC</label>
+                <input type="number" id="cc" min="0" max="100">
+            </div>
+
+            <div class="subject">
+                <label>MES</label>
+                <input type="number" id="mes" min="0" max="100">
+            </div>
+
+        </div>
+
+        <button onclick="calculateResult()">Calculate Result</button>
+
+    </div>
+
+    <div id="resultSection">
+
+        <h2>Result Card</h2>
+
+        <table>
+
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+
+            <tr>
+                <td>DBMS</td>
+                <td id="m1"></td>
+                <td id="g1"></td>
+            </tr>
+
+            <tr>
+                <td>JavaScript</td>
+                <td id="m2"></td>
+                <td id="g2"></td>
+            </tr>
+
+            <tr>
+                <td>CN</td>
+                <td id="m3"></td>
+                <td id="g3"></td>
+            </tr>
+
+            <tr>
+                <td>CC</td>
+                <td id="m4"></td>
+                <td id="g4"></td>
+            </tr>
+
+            <tr>
+                <td>MES</td>
+                <td id="m5"></td>
+                <td id="g5"></td>
+            </tr>
+
+        </table>
+
+        <h3 id="total"></h3>
+        <h3 id="percentage"></h3>
+        <h3 id="result"></h3>
+
+    </div>
+
+</div>
+
+<footer>
+    Designed by <strong>Rudrakshi Bhandekar | PRN: 24070521012</strong> 
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
