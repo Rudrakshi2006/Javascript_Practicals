@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SIT Nagpur - Computer Science Department</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background-color: #e8f4fc;
+            text-align: center;
+        }
+        body{
+            background-image: url("infra2.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+        h1{
+            color: rgb(139, 0, 63);
+        }
+
+        h2{
+            color: rgb(23, 140, 229);
+        }
+
+        .box{
+            width: 700px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px gray;
+        }
+
+        button{
+            background-color: rgb(16, 16, 244);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: rgb(8, 58, 209);
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            background-color: rgb(233, 135, 6);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover{
+            background-color: rgb(205, 123, 8);
+        }
+        footer{
+        text-align: center;
+        margin-top: 30px;
+        padding: 12px;
+        background-color: rgb(44, 2, 84);
+        color: white;
+        font-size: 16px;
+        width: 100%;
+    }
+    </style>
+
+    <script>
+        function showDepartment(){
+
+            document.getElementById("output").innerHTML=
+
+            "<h2>Computer Science & Engineering Department</h2>" +
+
+            "<p><b>College :</b> Symbiosis Institute of Technology, Nagpur</p>" +
+
+            "<p><b>Courses :</b> B.Tech Computer Science Engineering</p>" +
+
+            "<p><b>Facilities :</b> Computer Labs, Library, Smart Classrooms, Wi-Fi Campus</p>";
+
+        }
+    </script>
+
+</head>
+
+<body>
+<marquee bgcolor="red" direction="left" scrollamount="10">
+    <font color="white" size="3">
+        Admissions Open 2026 | Welcome to SIT Nagpur | 2ndConference on Sustanibility and Innovation and Technology (ICSIT 2026) | 
+    </font>
+</marquee>
+
+<div class="box">
+<h1>Symbiosis Institute of Technology, Nagpur</h1>
+
+<button onclick="showDepartment(); welcome();">
+Show Department
+</button>
+
+<br><br>
+
+<a href="student.html">Student Information</a>
+
+<hr>
+
+<div id="output"></div>
+
+</div>
+
+<script src="script.js"></script>
+<footer>
+    Designed by <b>Rudrakshi Bhandekar</b> | PRN: <b>24070521012</b>
+</footer>
+</body>
+</html>

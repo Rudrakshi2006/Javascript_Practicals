@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Student Information</title>
+
+<style>
+
+body{
+    background-color:#fff8dc;
+    font-family:Arial;
+}
+
+.box{
+    width:500px;
+    margin:auto;
+    background:white;
+    padding:16px;
+    border-radius:8px;
+    box-shadow:2px 2px 10px gray;
+}
+
+h1{
+    text-align:center;
+    color:darkblue;
+}
+
+input{
+    width:95%;
+    padding:4px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+button{
+    background:rgb(144, 5, 224);
+    color:white;
+    padding:10px 20px;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:rgb(101, 8, 201);
+}
+footer{
+    text-align: center;
+    margin-top: 30px;
+    padding: 12px;
+    background-color: rgb(96, 2, 95);
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+</style>
+
+<script>
+
+function showStudent(){
+
+    var name=document.getElementById("name").value;
+    var roll=document.getElementById("roll").value;
+    var branch=document.getElementById("branch").value;
+    var year=document.getElementById("year").value;
+
+    document.getElementById("result").innerHTML=
+
+    "<h2>Student Details</h2>"+
+
+    "<p><b>Name :</b> "+name+"</p>"+
+
+    "<p><b>Roll No :</b> "+roll+"</p>"+
+
+    "<p><b>Branch :</b> "+branch+"</p>"+
+
+    "<p><b>Year :</b> "+year+"</p>";
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Student Information Form</h1>
+<label>Name</label>
+<input type="text" id="name">
+<label>Roll Number</label>
+<input type="text" id="roll">
+<label>Branch</label>
+<input type="text" id="branch">
+<label>Year</label>
+<input type="text" id="year">
+<button onclick="showStudent()">Submit</button>
+<hr>
+
+<div id="result"></div>
+
+<br>
+
+<a href="department.html">⬅ Back to Department Page</a>
+
+</div>
+<footer>
+    Designed by <b>Rudrakshi Bhandekar</b> | PRN: <b>24070521012</b>
+</footer>
+</body>
+
+</html>
