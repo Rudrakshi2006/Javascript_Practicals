@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppy Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <marquee behavior="scroll" direction="left">
+        🎉 Flat 5% OFF on Orders Above ₹999 |
+        🎁 Coupon : BOOK10 = Extra 10% OFF |
+        SAVE50 = ₹50 OFF on Orders Above ₹500 |
+        🚚 Free Delivery Above ₹500</marquee>
+    <header>
+
+        <h1>📚 SHOPPY BOOK STORE</h1>
+        <p>Your One Stop Destination for Books</p>
+
+    </header>
+    <section class="books-container" id="booksContainer">
+        <div class="book-card">
+            <h3>Java Programming</h3>
+            <p><strong>Author :</strong> Herbert Schildt</p>
+            <h2>₹699</h2>
+            <div class="quantity">
+                <button onclick="decreaseQty(0)">−</button>
+                <span id="qty0">0</span>
+                <button onclick="increaseQty(0)">+</button>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <h3>Python Programming</h3>
+            <p><strong>Author :</strong> Eric Matthes</p>
+            <h2>₹799</h2>
+            <div class="quantity">
+                <button onclick="decreaseQty(1)">−</button>
+                <span id="qty1">0</span>
+                <button onclick="increaseQty(1)">+</button>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <h3>Database Management System</h3>
+            <p><strong>Author :</strong> Abraham Silberschatz</p>
+            <h2>₹499</h2>
+            <div class="quantity">
+                <button onclick="decreaseQty(2)">−</button>
+                <span id="qty2">0</span>
+                <button onclick="increaseQty(2)">+</button>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <h3>Data Structures</h3>
+            <p><strong>Author :</strong> Narasimha Karumanchi</p>
+            <h2>₹599</h2>
+            <div class="quantity">
+                <button onclick="decreaseQty(3)">−</button>
+                <span id="qty3">0</span>
+                <button onclick="increaseQty(3)">+</button>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <h3>Operating System</h3>
+            <p><strong>Author :</strong> Galvin</p>
+            <h2>₹649</h2>
+            <div class="quantity">
+                <button onclick="decreaseQty(4)">−</button>
+                <span id="qty4">0</span>
+                <button onclick="increaseQty(4)">+</button>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <h3>Computer Networks</h3>
+            <p><strong>Author :</strong> Forouzan</p>
+            <h2>₹699</h2>
+            <div class="quantity">
+                <button onclick="decreaseQty(5)">−</button>
+                <span id="qty5">0</span>
+                <button onclick="increaseQty(5)">+</button>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <h3>Web Development</h3>
+            <p><strong>Author :</strong> Jon Duckett</p>
+            <h2>₹799</h2>
+            <div class="quantity">
+                <button onclick="decreaseQty(6)">−</button>
+                <span id="qty6">0</span>
+                <button onclick="increaseQty(6)">+</button>
+            </div>
+    </section>
+
+    <section class="customer">
+        <h2>Customer Details</h2>
+        <input
+            type="text"
+            id="customerName"
+            placeholder="Enter Customer Name"
+        >
+        <input
+            type="text"
+            id="mobileNumber"
+            placeholder="Enter Mobile Number"
+            maxlength="10"
+        >
+    </section>
+
+    <section class="coupon">
+        <h2>Coupon Code</h2>
+        <input
+            type="text"
+            id="couponCode"
+            placeholder="BOOK10 or SAVE50"
+        >
+    </section>
+
+    <section class="payment">
+        <h2>Select Payment Method</h2>
+        <select id="paymentMethod">
+            <option value="UPI">UPI</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="Cash On Delivery">
+                Cash On Delivery
+            </option>
+        </select>
+
+    </section>
+    <section class="buttons">
+
+        <button onclick="generateBill()">
+            Preview Bill
+        </button>
+        <button onclick="saveBill()">
+            Save Bill
+        </button>
+
+    </section>
+
+    <section id="billSection"> </section>
+
+    <footer>
+
+        © 2026 Shoppy Book Store | Designed by Rudrakshi Bhandekar ( 24070521012
+        )
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
