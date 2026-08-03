@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RTO Vehicle Registration Portal</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body onload="displayDateTime();setInterval(displayDateTime,1000)">
+
+<div class="overlay">
+
+<div class="top">
+
+<div class="car">
+<i class="fa-solid fa-car-side"></i>
+</div>
+
+<h1>RTO Vehicle Number Validator Portal</h1>
+
+<p>Validate Indian Vehicle Registration Number</p>
+
+<div id="datetime"></div>
+
+</div>
+
+<div class="container">
+
+<input
+type="text"
+id="vehicleNo"
+placeholder="Enter Vehicle No. (MH12AB1234)"
+maxlength="10"
+autocomplete="off">
+
+<button onclick="validateVehicle()">
+<i class="fa-solid fa-circle-check"></i>
+Validate
+</button>
+
+<div id="result"></div>
+
+</div>
+
+<footer>
+
+Designed by <strong>Rudrakshi Bhandekar</strong> | PRN: 24070521012<br>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
