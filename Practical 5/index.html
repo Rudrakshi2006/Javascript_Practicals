@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎬 Movie Ticket Booking System</h1>
+
+        <div class="main">
+
+            <!-- Left Card -->
+
+            <div class="card">
+
+                <h2>Book Ticket</h2>
+
+                <label>Select Movie</label>
+
+                <select id="movieSelect" onchange="showPrice()">
+
+                    <option value="0">Avengers</option>
+                    <option value="1">Superman</option>
+                    <option value="2">Jurassic World</option>
+                    <option value="3">F1</option>
+                    <option value="4">Pushpa 2</option>
+
+                </select>
+
+                <label>Ticket Price</label>
+
+                <input type="text" id="price" readonly>
+
+                <button onclick="addBooking()">
+                    ➕ Add Booking
+                </button>
+
+            </div>
+
+
+            <!-- Right Card -->
+
+            <div class="card">
+
+                <h2>Your Bookings</h2>
+
+                <div id="bookingList">
+
+                    No bookings yet.
+
+                </div>
+
+                <button onclick="removeBooking()">
+                    ❌ Remove Last Booking
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Section -->
+
+        <div class="output">
+
+            <h2>Booking Analysis</h2>
+
+            <div class="btnRow">
+
+                <button onclick="premiumMovies()">
+                    ⭐ Premium Movies
+                </button>
+
+                <button onclick="highestLowest()">
+                    📈 Highest & Lowest
+                </button>
+
+            </div>
+
+            <div id="result">
+
+                Select an operation.
+
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+
+    Designed by <strong>Rudrakshi Bhandekar</strong> | PRN: <strong>24070521012</strong><br>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
