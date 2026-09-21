@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: #f4f6f8;
+    padding: 35px 45px 20px;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 28px;
+}
+
+.form-box {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    height: 47px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2867d9;
+}
+
+button {
+    margin-top: 21px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background: #2867d9;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e55b7;
+}
+
+.instruction {
+    text-align: center;
+    margin: 20px 0 30px;
+    font-size: 17px;
+    color: #555;
+}
+
+table {
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    border: 2px solid #666;
+    text-align: center;
+    padding: 14px 10px;
+    font-size: 17px;
+}
+
+th {
+    background: #dcecf7;
+    font-weight: bold;
+}
+
+td:nth-child(2) {
+    background: #e1f2d9;
+}
+
+td:nth-child(3) {
+    background: #e4e8fb;
+}
+
+.topic {
+    background: white !important;
+    font-weight: bold;
+    color: #27558d;
+    cursor: pointer;
+}
+
+.topic:hover {
+    background: #f0f6ff !important;
+}
+
+.empty-topic {
+    background: white !important;
+}
+
+.edit-btn {
+    margin: 0;
+    padding: 7px 15px;
+    font-size: 14px;
+    background: #6c5ce7;
+}
+
+.edit-btn:hover {
+    background: #5545c7;
+}
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    color: #8c0385;
+    font-size: 18px;
+    
+}
+
+@media (max-width: 850px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    th,
+    td {
+        font-size: 13px;
+        padding: 9px 5px;
+    }
+}

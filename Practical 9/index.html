@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seminar Schedule Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Seminar Schedule Planner</h1>
+
+    <div class="form-box">
+        <h2>Add Schedule</h2>
+
+        <div class="form-row">
+            <div>
+                <label>Day</label>
+                <input type="text" id="day" placeholder="e.g. Monday">
+            </div>
+
+            <div>
+                <label>Begin Time</label>
+                <input type="text" id="begin" placeholder="e.g. 8:00 a.m.">
+            </div>
+
+            <div>
+                <label>End Time</label>
+                <input type="text" id="end" placeholder="e.g. 5:00 p.m.">
+            </div>
+
+            <div>
+                <label>Topic</label>
+                <input type="text" id="topic" placeholder="e.g. Introduction to XML">
+            </div>
+        </div>
+
+        <button onclick="addSchedule()">Add to Planner</button>
+    </div>
+
+    <p class="instruction">Click on any topic to view its details.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th colspan="2">Schedule</th>
+                <th>Topic</th>
+            </tr>
+
+            <tr>
+                <th></th>
+                <th>Begin</th>
+                <th>End</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody id="scheduleTable"></tbody>
+    </table>
+
+    <footer>
+        Designed By: <strong>Rudrakshi Bhandekar</strong> | PRN: <strong>24070521012</strong>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
