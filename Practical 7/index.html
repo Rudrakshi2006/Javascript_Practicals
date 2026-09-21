@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration / Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+        <section class="form-card">
+
+            <h1>Registration / Sign Up Form</h1>
+            <p class="subtitle">Create your account by filling in the details below</p>
+
+            <form id="registrationForm">
+
+                <div class="form-row">
+                    <label for="firstname">Firstname <span>*</span></label>
+                    <div class="field">
+                        <input type="text" id="firstname" placeholder="Enter firstname">
+                        <small class="error" id="firstnameError"></small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="lastname">Lastname</label>
+                    <div class="field">
+                        <input type="text" id="lastname" placeholder="Enter lastname">
+                        <small class="error" id="lastnameError"></small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label>Birthday</label>
+                    <div class="field">
+                        <div class="birthday">
+                            <select id="day">
+                                <option value="">Day</option>
+                            </select>
+
+                            <select id="month">
+                                <option value="">Month</option>
+                            </select>
+
+                            <select id="year">
+                                <option value="">Year</option>
+                            </select>
+                        </div>
+
+                        <small class="error" id="birthdayError"></small>
+                        <small class="birthday-message" id="birthdayMessage"></small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="username">Username <span>*</span></label>
+                    <div class="field">
+                        <input type="text" id="username" placeholder="Choose a username">
+                        <small class="error" id="usernameError"></small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">E-mail <span>*</span></label>
+                    <div class="field">
+                        <input type="email" id="email" placeholder="example@email.com">
+                        <small class="error" id="emailError"></small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="website">Website</label>
+                    <div class="field">
+                        <input type="text" id="website" placeholder="https://example.com">
+                        <small class="error" id="websiteError"></small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="password">Password <span>*</span></label>
+                    <div class="field">
+                        <input type="password" id="password" placeholder="Minimum 6 characters">
+                        <small class="error" id="passwordError"></small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="repassword">Re-password <span>*</span></label>
+                    <div class="field">
+                        <input type="password" id="repassword" placeholder="Re-enter password">
+                        <small class="error" id="repasswordError"></small>
+                    </div>
+                </div>
+
+                <div class="terms-row">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">
+                        I agree to the terms & conditions.
+                    </label>
+                </div>
+
+                <small class="error terms-error" id="termsError"></small>
+
+                <button type="submit" id="signupBtn">Sign Up</button>
+
+                <p class="success" id="successMessage"></p>
+
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        Designed by <strong>Rudrakshi Bhandekar</strong> |
+        PRN: <strong>24070521012</strong>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
